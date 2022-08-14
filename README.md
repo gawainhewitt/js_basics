@@ -29,10 +29,42 @@ Object
 Array
 Function
 
+```
+let person = {}; // object literal - indicates an empty object
+let selectedPeople = []; // array literal - indicates an empty array
+```
+
 ## Dynamic Typing
 
 JavaScript is dynamically typed. What this means is that the type value that a variable holds is determined at runtime and can change dynamically. For example if we say `let name = 'Gawain'` then `name` is of the type `"string"`. If I then reallocate name to a number like this `name = 34`, name is now of the type `"number"`. This is in contrast to statically typed languages such as C where you declare what type of thing a variable holds.
 
+This is also applicable with arrays - the length of the array and the types of objects that they hold are also dynamic and can change during runtime.
+
 ## Types of number
 
 JavaScript does not have different types of numbers like some languages (commonly integer and float). It just has "number".
+
+## Functions
+
+```
+
+function testFunction(parameter1, parameter2) { // called parameters at the point of declaration
+  console.log(parmeter1 + parameter2);
+}
+
+function testFunction(argument1, argument2); // while the argument is the value that we supply to the parameter when we call the function
+
+```
+
+## Arithmetic operators
+
+an expression is something that produces a value for example `x + y`
+
+``` 
+x + y // addition
+x - y // subtraction
+x * y // multiplication
+x / y // division
+x % y // remainder of division or modulo
+x ** y // exponentiation - x to the power of y
+```
