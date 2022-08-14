@@ -1,5 +1,7 @@
 # Js Basics from the coding with Mosh course
 
+## Variables
+
 Best practice is to declare each variable on it's own line like:
 
 ```
@@ -9,7 +11,7 @@ let alex = null;
 let age = 43;
 ```
 
-primative types
+## Primative types
 
 In ES6 there are the following primative types
 
