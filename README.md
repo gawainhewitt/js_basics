@@ -23,6 +23,12 @@ let firstName = undefined; // you would not normally specify a variable to be 'u
 let lastName = null; // use this to hold a space for something when it's not something else. 
 ```
 
+## Reference Types
+
+Object
+Array
+Function
+
 ## Dynamic Typing
 
 JavaScript is dynamically typed. What this means is that the type value that a variable holds is determined at runtime and can change dynamically. For example if we say `let name = 'Gawain'` then `name` is of the type `"string"`. If I then reallocate name to a number like this `name = 34`, name is now of the type `"number"`. This is in contrast to statically typed languages such as C where you declare what type of thing a variable holds.
