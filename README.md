@@ -99,3 +99,16 @@ x %= 9;
 
 ```
 
+## Types of equality
+
+JavaScript has two commonly used equality operations and one other
+
+```
+
+== // is loosely equal
+=== // is strictly equal
+Object.is // same value - very similar to ===, a little stricter and has it's own flavour
+```
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness 
+
