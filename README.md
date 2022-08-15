@@ -67,4 +67,35 @@ x * y // multiplication
 x / y // division
 x % y // remainder of division or modulo
 x ** y // exponentiation - x to the power of y
+x ++ y // increment
+x -- y // decrement
+
+let x = 10;
 ```
+
+## Assignment Operators
+
+```
+
+x = x + 3;
+// is the same as
+x += 3;
+
+x = x - 7;
+// is the same as
+x -= 7;
+
+x = x * 6;
+// is the same as
+x *= 6;
+
+x = x / 2;
+// is the same as
+x /= 2;
+
+x = x % 9;
+// is the same as
+x %= 9;
+
+```
+
