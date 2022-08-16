@@ -112,3 +112,17 @@ Object.is // same value - very similar to ===, a little stricter and has it's ow
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness 
 
+## Ternary Operator
+
+A ternary operator allows you to write a conditional statement
+
+for example
+
+```
+
+let age = 43;
+let type = age > 43 ? 'oldMan' : 'youngMan';
+
+```
+so we have the statement first `age > 43` this will give a true or false. Then we have a `?` to show that it is a ternary thing, then if the answer is true we get the first answer, in this case `'oldMan'` otherwise we get the second answer after the `:` in this case `'youngMan'`.
+
