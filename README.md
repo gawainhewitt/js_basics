@@ -2,6 +2,10 @@
 
 ## Variables
 
+Pre ES6 we used `var` to declare a variable. Now we use `let` or `const`.
+
+Prefer `const` over `let`. Prefer `let` over `var`.
+
 Best practice is to declare each variable on it's own line like:
 
 ```
