@@ -1,5 +1,7 @@
 # JavaScript Basics
 
+This repository has my notes on basic JavaScript concepts for reference. 
+
 ## Variables
 
 Pre ES6 we used `var` to declare a variable. Now we use `let` or `const`.
