@@ -1,4 +1,4 @@
-# Js Basics from the coding with Mosh course
+# JS Basics
 
 ## Variables
 
