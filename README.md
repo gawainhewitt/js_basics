@@ -189,3 +189,16 @@ Some examples of integer literals are:
 
 ## Simple bitwise operators
 
+Bitwise operators allow you to use individual bits in a binary number to store and change boolean values.
+
+For example I could use `10101010` to store a simple drum pattern. 
+
+Bitwise OR `|`
+
+ The bitwise OR operator (|) returns a 1 in each bit position for which the corresponding bits of either or both operands are 1s. 
+
+```
+let patternA = 10101010;
+let patternB = 00000001;
+console.log(patternA | patternB); // 10101011;
+```
