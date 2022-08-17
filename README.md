@@ -216,3 +216,15 @@ for (let key in birds)
   console.log(key, birds[key]);
   
 ```
+
+## For Of
+
+Ideal for iterating over an array
+
+```
+const notes = ['C', 'D', 'E'];
+
+for (let note of notes)
+  console.log(note);
+
+```
