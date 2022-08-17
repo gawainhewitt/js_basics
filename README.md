@@ -197,8 +197,10 @@ Bitwise OR `|`
 
  The bitwise OR operator (|) returns a 1 in each bit position for which the corresponding bits of either or both operands are 1s. 
 
+We can use this to add a beat to our pattern
+
 ```
-let patternA = 10101010;
-let patternB = 00000001;
-console.log(patternA | patternB); // 10101011;
+let pattern = 10101010;
+let beat8 = 00000001;
+console.log(pattern | beat8); // 10101011;
 ```
