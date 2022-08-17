@@ -200,3 +200,19 @@ Bitwise OR `|`
 Bitwise AND `&`
 
 Bitwise NOT `~`
+
+## For In
+
+Ideal for iterating over an object
+
+```
+let birds = {
+  bpm: 120,
+  size: 4,
+  color: 'red
+}
+
+for (let key in birds) 
+  console.log(key, birds[key]);
+  
+```
