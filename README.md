@@ -132,3 +132,38 @@ let type = age > 43 ? 'oldMan' : 'youngMan';
 ```
 so we have the statement first `age > 43` this will give a true or false. Then we have a `?` to show that it is a ternary thing, then if the answer is true we get the first answer, in this case `'oldMan'` otherwise we get the second answer after the `:` in this case `'youngMan'`.
 
+## Falsy things in JS
+
+In JS we don't just have strict true and strict false, we also have things which are considered truthy or considered falsy. This is a list of falsy things, everything else is considered truthy. We can use this with logical operators to write some concise code. 
+
+```
+undefined
+null
+0
+false
+'' // empty string
+NaN
+```
+
+## Short circuiting OR operator
+
+OR will return the first truthy thing it encounters.
+
+```
+false || false || true || 'true2' // will return true
+
+false || 23 || 20 // will return 23
+```
+
+this can be very powerful 
+
+```
+
+let userScale; // undefined by default
+let defaultScale = 'C';
+let currentScale = userScale || defaultScale; 
+
+// currentScale will be C because undefined is falsy. 
+// when userScale is set to a value, then it is truty and currentScale will be that instead
+
+```
