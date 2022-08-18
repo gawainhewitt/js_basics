@@ -1,5 +1,5 @@
-const maxNumber = (num1, num2) => {
-  return (num1 > num2) ? num1 : num2;
+const isLandscape = (width, height) => {
+  return (width > height);
 }
 
-console.log(maxNumber(7, 7));
+console.log(isLandscape(10, 10));
