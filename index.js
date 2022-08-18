@@ -1,12 +1,25 @@
-// showNumbers
+const array = [1, 'string', true];
 
-const showNumbers = (limit) => {
-  for (let i = 0; i <= limit; i++){
-    console.log(`${i} ${(i % 2 === 0) ? '"EVEN"' : '"ODD"'}`);
+const countTruthy = (array) => {
+  let count = 0;
+  for (let item of array) {
+    if (item) count ++;
   }
+  return count;
 }
 
-showNumbers(3);
+console.log(countTruthy(array));
+
+
+// // showNumbers
+
+// const showNumbers = (limit) => {
+//   for (let i = 0; i <= limit; i++){
+//     console.log(`${i} ${(i % 2 === 0) ? '"EVEN"' : '"ODD"'}`);
+//   }
+// }
+
+// showNumbers(3);
 
 
 
