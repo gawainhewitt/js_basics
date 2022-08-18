@@ -1,14 +1,29 @@
-const array = [1, 'string', true];
-
-const countTruthy = (array) => {
-  let count = 0;
-  for (let item of array) {
-    if (item) count ++;
-  }
-  return count;
+const movie = {
+  title: 'a', 
+  releaseYear: 2018,
+  rating: 4.5,
+  director: 'b'
 }
 
-console.log(countTruthy(array));
+const showProperties = (obj) => {
+  for (let prop in obj) {
+    if (typeof obj[prop] === 'string') console.log(`${prop} ${obj[prop]}`);
+  }
+}
+
+showProperties(movie);
+
+// const array = [1, 'string', true];
+
+// const countTruthy = (array) => {
+//   let count = 0;
+//   for (let item of array) {
+//     if (item) count ++;
+//   }
+//   return count;
+// }
+
+// console.log(countTruthy(array));
 
 
 // // showNumbers
