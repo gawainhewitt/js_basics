@@ -1,12 +1,27 @@
-const showStars = (rows) => {
-  let starsString = '';
-  for (let row = 0; row < rows; row++) {
-    starsString += '*';
-    console.log(starsString);
-  }
+const showPrimes = (limit) => {
+  for (let num = 2; num <= limit; num ++) 
+    if (isPrime(num)) console.log(num);
 }
 
-showStars(2);
+const isPrime = (num) => {
+  for (let factor = 2; factor < num; factor ++)
+    if (num % factor === 0) 
+      return false;
+
+  return true;
+}
+
+showPrimes(20);
+
+// const showStars = (rows) => {
+//   let starsString = '';
+//   for (let row = 0; row < rows; row++) {
+//     starsString += '*';
+//     console.log(starsString);
+//   }
+// }
+
+// showStars(2);
 
 // const calculateGrade = (marks) => {
 //   const average = calculateAverage(marks);
