@@ -333,3 +333,12 @@ delete circle.color;
 delete circle.draw;
 
 ```
+
+## Primitives or value types vs reference or object types
+
+Firstly, functions and arrays are objects. All objects are Reference types
+
+Primitives are Number, String, Boolean, Symbol, undefined and null
+
+When you assign a primitive to a variable the actual value is stored. When you assign an Object to a variable, then it's address is stored, not the thing itself. So if you copy that variable to another they will both point to the same object.
+
