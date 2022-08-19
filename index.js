@@ -1,17 +1,34 @@
-const movie = {
-  title: 'a', 
-  releaseYear: 2018,
-  rating: 4.5,
-  director: 'b'
-}
 
-const showProperties = (obj) => {
-  for (let prop in obj) {
-    if (typeof obj[prop] === 'string') console.log(`${prop} ${obj[prop]}`);
-  }
-}
 
-showProperties(movie);
+// const sum = (limit) => {
+//   let answer = 0;
+
+//   for (let i = 0; i <= limit; i++) {
+//     if ( i % 3 === 0 || i % 5 === 0 ) 
+//       answer += i;
+//   }
+
+//   return answer;
+// }
+
+// console.log(sum(15));
+
+
+// const movie = {
+//   title: 'a', 
+//   releaseYear: 2018,
+//   rating: 4.5,
+//   director: 'b'
+// }
+
+// const showProperties = (obj) => {
+//   for (let prop in obj) {
+//     if (typeof obj[prop] === 'string') 
+//       console.log(`${prop} ${obj[prop]}`);
+//   }
+// }
+
+// showProperties(movie);
 
 // const array = [1, 'string', true];
 
