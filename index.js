@@ -1,4 +1,12 @@
+const showStars = (rows) => {
+  let starsString = '';
+  for (let row = 0; row < rows; row++) {
+    starsString += '*';
+    console.log(starsString);
+  }
+}
 
+showStars(2);
 
 // const calculateGrade = (marks) => {
 //   const average = calculateAverage(marks);
