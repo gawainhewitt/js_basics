@@ -315,3 +315,21 @@ const circle = new Circle(1);
 console.log(circle);
 circle.draw();
 ```
+
+## Deleting properties or methods from an object
+
+you can delete using the `delete` keyword as follows:
+
+```
+const circle = {
+  radius: 1,
+  color: 'yellow'
+  draw() {
+    console.log('draw');
+  }
+};
+
+delete circle.color;
+delete circle.draw;
+
+```
