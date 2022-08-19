@@ -229,6 +229,48 @@ for (let note of notes)
 
 ```
 
+## Objects in ES6
+
+If the key and value are the same, then there is a shortcut syntax
+
+```
+let radius = 1;
+
+let example = {
+  radius: radius
+};
+
+//instead we can have
+
+let example = {
+  radius
+};
+```
+
+also if the value is a function then there is a shortcut too
+
+```
+
+let example = {
+  draw: function() {
+    console.log('draw');
+    return 'drawing';
+  }
+};
+
+//instead we can have
+
+let example = {
+  draw() {
+    console.log('draw');
+    return 'drawing';
+  }
+};
+```
+
 ## Functions within objects
 
 If a function is within an object we refer to it as a method
+
+## Factory functions
+
