@@ -228,3 +228,7 @@ for (let note of notes)
   console.log(note);
 
 ```
+
+## Functions within objects
+
+If a function is within an object we refer to it as a method
