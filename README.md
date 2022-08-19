@@ -274,3 +274,44 @@ If a function is within an object we refer to it as a method
 
 ## Factory functions
 
+A factory function is a function that returns an object. This allows us to reuse the same code and make sure that logic is only declared once. 
+
+For example
+
+```
+const createCircle = (radius) => {
+  return {
+    radius, 
+    draw() {
+      console.log('draw');
+    }
+  };
+}
+
+const circle1 = createCircle(1);
+console.log(circle1);
+
+const circle2 = createCircle(2);
+console.log(circle2);
+```
+
+## Constructor Functions
+
+When naming a constructor function you should use PascalCase by convention.
+
+Constructor functions have to use the old function syntax, not arrow functions.
+
+You use the `this` keyword in the function and the `new` keyword when constructing to make the object.
+
+```
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function() {
+    console.log('draw');
+  }
+}
+
+const circle = new Circle(1);
+console.log(circle);
+circle.draw();
+```
