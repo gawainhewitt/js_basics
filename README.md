@@ -352,3 +352,39 @@ Primitives are Number, String, Boolean, Symbol, undefined and null
 
 When you assign a primitive to a variable the actual value is stored. When you assign an Object to a variable, then it's address is stored, not the thing itself. So if you copy that variable to another they will both point to the same object.
 
+## Ways to clone Objects
+
+One way would be to iterate over the object and copy it bit by bit, but that is unneccessary. Instead we can do either of the following:
+
+```
+const circle = {
+  radius: 1,
+  color: 'yellow'
+  draw() {
+    console.log('draw');
+  }
+};
+
+const anotherCircle = Object.assign({}, circle); // the first object does not have to be an empty object, it can already have properties and methods, in which case this will add to them. 
+
+```
+
+you can also use the spread operator
+
+## The Spread Operator
+
+```
+const anotherCircle = {...circle};
+
+const yetAnotherThing = {...circle, ...moreStuff};
+```
+
+You can also use spread with arrays
+
+```
+const array1 = [1, 3, 22, 78];
+const array2 = ['yes', 'gawain'];
+
+const array3 = [...array1, ...array2]
+
+```
