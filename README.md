@@ -410,3 +410,25 @@ name.indexOf('w');
 name.replace('w', 'p');
 // 'gapain'
 ```
+
+There are also escape sequences which are special characters that allow you to do special things i.e.:
+
+`\n` newline <br>
+`\'` add a single quote to a string     
+
+## Date object
+
+```
+const now = new Date();
+
+now
+Sat Aug 20 2022 15:25:06 GMT+0100 (British Summer Time)
+
+now.toISOString();          //ISOString is a standard in web applications
+'2022-08-20T14:25:06.748Z'
+
+const date1 = new Date(2022, 2, 22, 9);
+
+date1
+Tue Mar 22 2022 09:00:00 GMT+0000 (Greenwich Mean Time)
+```
