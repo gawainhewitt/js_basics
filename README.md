@@ -393,3 +393,20 @@ const array3 = [...array1, ...array2]
 
 JavaScript has a built in Math object which contains many useful maths functions such as PI, Max, random etc.
 
+## The String Object  
+
+Despitea string being a primitive, JS also has an Object which is a string. When you use the dot syntax on a variable containing a string then JS will wrap the primitive in a String Object to give you access to the properties of the object. 
+
+For example;
+
+```
+
+const name = 'gawain';
+
+name.length
+// 6
+name.indexOf('w');
+// 2
+name.replace('w', 'p');
+// 'gapain'
+```
