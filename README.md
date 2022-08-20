@@ -388,3 +388,8 @@ const array2 = ['yes', 'gawain'];
 const array3 = [...array1, ...array2]
 
 ```
+
+## The Math Object
+
+JavaScript has a built in Math object which contains many useful maths functions such as PI, Max, random etc.
+
