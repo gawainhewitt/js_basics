@@ -217,6 +217,16 @@ for (let key in birds)
   
 ```
 
+## If in 
+
+You can use the following to see if a key is in an object:
+
+```
+('bpm' in birds)
+```
+
+Returns a boolean. This can then of course be used in a ternary of an if statement etc.
+
 ## For Of
 
 Ideal for iterating over an array
