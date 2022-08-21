@@ -1,15 +1,30 @@
-const address = {
-  street: 'Regent Road',
-  city: 'London', 
-  postcode: 'SE24 0EL'
-};
-
-const showAddress = (address) => {
-  for (let key in address)
-    console.log(`${key}: ${address[key]}`);
+function factoryAddress(street, city, postcode) {
+  return {
+    street,
+    city, 
+    postcode
+  };
 }
 
-showAddress(address);
+function Address(street, city, postcode) {
+  this.street = street;
+  this.city = city;
+  this.postcode = postcode;
+}
+
+
+// const address = {
+//   street: 'Regent Road',
+//   city: 'London', 
+//   postcode: 'SE24 0EL'
+// };
+
+// const showAddress = (address) => {
+//   for (let key in address)
+//     console.log(`${key}: ${address[key]}`);
+// }
+
+// showAddress(address);
 
 // function Circle(radius) {
 //   this.radius = radius;
