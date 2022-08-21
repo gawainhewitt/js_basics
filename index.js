@@ -1,27 +1,39 @@
-function Address(street, city, postcode) {
-  this.street = street;
-  this.city = city;
-  this.postcode = postcode;
-}
+let blog = {
+  title: 'a',
+  body: 'b',
+  author: 'c',
+  views: 2,
+  comments: [
+    {author: 'd', body: 'e'},
+    {author: 'g', body: 'h'},
+  ],
+  isLive: false
+}; 
 
-const address1 = new Address('a', 'b', 'c');
-const address2 = new Address('a', 'b', 'c');
+// function Address(street, city, postcode) {
+//   this.street = street;
+//   this.city = city;
+//   this.postcode = postcode;
+// }
 
-const areEqual = (address1, address2) => {
-  for (let key in address1){
-    if (address1[key] != address2[key])
-      return false;
-  }
-  return true;
-}
+// const address1 = new Address('a', 'b', 'c');
+// const address2 = new Address('a', 'b', 'c');
 
-const areSame = (address1, address2) => {
-  return address1 === address2;
-}
+// const areEqual = (address1, address2) => {
+//   for (let key in address1){
+//     if (address1[key] != address2[key])
+//       return false;
+//   }
+//   return true;
+// }
 
-console.log(`testing areEqual and it returns ${areEqual(address1, address2)}`);
+// const areSame = (address1, address2) => {
+//   return address1 === address2;
+// }
 
-console.log(`testing areSame and it returns ${areSame(address1, address2)}`);
+// console.log(`testing areEqual and it returns ${areEqual(address1, address2)}`);
+
+// console.log(`testing areSame and it returns ${areSame(address1, address2)}`);
 
 // function factoryAddress(street, city, postcode) {
 //   return {
