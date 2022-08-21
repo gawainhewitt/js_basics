@@ -1,17 +1,46 @@
-const showPrimes = (limit) => {
-  for (let num = 2; num <= limit; num ++) 
-    if (isPrime(num)) console.log(num);
+const address = {
+  street: 'Regent Road',
+  city: 'London', 
+  postcode: 'SE24 0EL'
+};
+
+const showAddress = (address) => {
+  for (let key in address)
+    console.log(`${key}: ${address[key]}`);
 }
 
-const isPrime = (num) => {
-  for (let factor = 2; factor < num; factor ++)
-    if (num % factor === 0) 
-      return false;
+showAddress(address);
 
-  return true;
-}
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.draw = function() {
+//     console.log('draw');
+//   }
+// }
 
-showPrimes(20);
+// const circle = new Circle(1);
+// console.log(circle);
+// circle.draw();
+
+// let testing123 = ['t', 'fourteen'];
+
+// ('radius' in circle) ? console.log('yes') : console.log('no');
+
+
+// const showPrimes = (limit) => {
+//   for (let num = 2; num <= limit; num ++) 
+//     if (isPrime(num)) console.log(num);
+// }
+
+// const isPrime = (num) => {
+//   for (let factor = 2; factor < num; factor ++)
+//     if (num % factor === 0) 
+//       return false;
+
+//   return true;
+// }
+
+// showPrimes(20);
 
 // const showStars = (rows) => {
 //   let starsString = '';
